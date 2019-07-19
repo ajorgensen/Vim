@@ -10,6 +10,7 @@ import { parseRegisterCommandArgs } from './subparsers/register';
 import { parseOptionsCommandArgs } from './subparsers/setoptions';
 import { parseSortCommandArgs } from './subparsers/sort';
 import { parseSubstituteCommandArgs } from './subparsers/substitute';
+import { parseGlobalCommandArgs } from './subparsers/global';
 import * as tabCmd from './subparsers/tab';
 import { parseWallCommandArgs } from './subparsers/wall';
 import { parseWriteCommandArgs } from './subparsers/write';
@@ -74,6 +75,7 @@ export const commandParsers = {
   tabm: tabCmd.parseTabMovementCommandArgs,
 
   s: parseSubstituteCommandArgs,
+  g: parseGlobalCommandArgs,
 
   e: fileCmd.parseEditFileCommandArgs,
   edit: fileCmd.parseEditFileCommandArgs,
